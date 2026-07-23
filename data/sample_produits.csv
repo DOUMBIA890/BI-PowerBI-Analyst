@@ -1,0 +1,5 @@
+id_produit,nom_produit,categorie,prix_unitaire,gamme
+P001,Cornet Vanille,Vanille,3.00,Classique
+P002,Slider Chocolat,Chocolat,3.50,Premium
+P003,Sorbet Fraise,Fruit,4.50,Premium
+P004,Barre Menta,Menthe,5.50,Signature

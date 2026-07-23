@@ -1,0 +1,55 @@
+{
+  "project": "Resource humaine",
+  "pages": [
+    {
+      "name": "Executive",
+      "visuals": [
+        {
+          "type": "Card",
+          "x": 30,
+          "y": 40,
+          "width": 250,
+          "height": 120
+        },
+        {
+          "type": "Card",
+          "x": 300,
+          "y": 40,
+          "width": 250,
+          "height": 120
+        },
+        {
+          "type": "Card",
+          "x": 570,
+          "y": 40,
+          "width": 250,
+          "height": 120
+        },
+        {
+          "type": "LineChart",
+          "x": 30,
+          "y": 200,
+          "width": 900,
+          "height": 320,
+          "title": "Évolution du CA"
+        },
+        {
+          "type": "BarChart",
+          "x": 30,
+          "y": 560,
+          "width": 450,
+          "height": 320,
+          "title": "Top Produits"
+        },
+        {
+          "type": "DonutChart",
+          "x": 510,
+          "y": 560,
+          "width": 420,
+          "height": 320,
+          "title": "Répartition géographique"
+        }
+      ]
+    }
+  ]
+}

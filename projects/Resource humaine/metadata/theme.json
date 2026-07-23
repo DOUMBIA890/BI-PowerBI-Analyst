@@ -1,0 +1,34 @@
+{
+  "name": "Executive",
+  "dataColors": [
+    "#4F8CFF",
+    "#22D3EE",
+    "#3FB950",
+    "#D29922",
+    "#BC8CFF",
+    "#F778BA"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#0F1419",
+  "tableAccent": "#4F8CFF",
+  "good": "#3FB950",
+  "neutral": "#8B98A5",
+  "bad": "#F85149",
+  "fontFamily": "Segoe UI",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#F4F6FB"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "nom_fichier": "Products.csv",
+  "nombre_lignes": 3,
+  "nombre_colonnes": 4,
+  "colonnes": [
+    {
+      "nom": "id",
+      "type": "int64",
+      "valeurs_uniques": 3,
+      "taux_manquant": 0.0,
+      "exemple": "1"
+    },
+    {
+      "nom": "product_name",
+      "type": "str",
+      "valeurs_uniques": 3,
+      "taux_manquant": 0.0,
+      "exemple": "Classic Stroopwafel"
+    },
+    {
+      "nom": "unit_cost",
+      "type": "float64",
+      "valeurs_uniques": 3,
+      "taux_manquant": 0.0,
+      "exemple": "0.867"
+    },
+    {
+      "nom": "unit_price",
+      "type": "float64",
+      "valeurs_uniques": 3,
+      "taux_manquant": 0.0,
+      "exemple": "2.5"
+    }
+  ]
+}

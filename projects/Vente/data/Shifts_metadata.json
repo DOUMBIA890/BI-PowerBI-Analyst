@@ -1,0 +1,35 @@
+{
+  "nom_fichier": "Shifts.csv",
+  "nombre_lignes": 332,
+  "nombre_colonnes": 4,
+  "colonnes": [
+    {
+      "nom": "date",
+      "type": "str",
+      "valeurs_uniques": 83,
+      "taux_manquant": 0.0,
+      "exemple": "2023-07-03"
+    },
+    {
+      "nom": "role",
+      "type": "str",
+      "valeurs_uniques": 2,
+      "taux_manquant": 0.0,
+      "exemple": "Cashier"
+    },
+    {
+      "nom": "employee_id",
+      "type": "int64",
+      "valeurs_uniques": 10,
+      "taux_manquant": 0.0,
+      "exemple": "2"
+    },
+    {
+      "nom": "hours",
+      "type": "str",
+      "valeurs_uniques": 2,
+      "taux_manquant": 0.0,
+      "exemple": "10:00-14:00"
+    }
+  ]
+}

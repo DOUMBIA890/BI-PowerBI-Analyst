@@ -1,0 +1,15 @@
+{
+  "nom_fichier": "Promotions.csv",
+  "score_qualite": 100.0,
+  "lignes_dupliquees": 0,
+  "cellules_manquantes": 0,
+  "problemes": [],
+  "candidats_cles": [
+    "id",
+    "product_id",
+    "name",
+    "start_date",
+    "end_date",
+    "discount_rate"
+  ]
+}

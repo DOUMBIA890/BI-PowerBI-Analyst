@@ -1,0 +1,50 @@
+{
+  "project": "Vente",
+  "kpis": [
+    {
+      "nom": "Nb Lignes",
+      "mesure_dax": "Nb Lignes",
+      "table": "Promotions_metadata.json",
+      "format": "#,##0",
+      "objectif": null,
+      "sens": "contexte",
+      "description": "Indicateur agrégé : Nb Lignes."
+    },
+    {
+      "nom": "Nb Lignes",
+      "mesure_dax": "Nb Lignes",
+      "table": "Sales_lines_metadata.json",
+      "format": "#,##0",
+      "objectif": null,
+      "sens": "contexte",
+      "description": "Indicateur agrégé : Nb Lignes."
+    },
+    {
+      "nom": "Total Total Price",
+      "mesure_dax": "Total Total Price",
+      "table": "Sales_metadata.json",
+      "format": "#,##0.00",
+      "objectif": null,
+      "sens": "plus est mieux",
+      "description": "Indicateur agrégé : Total Total Price."
+    },
+    {
+      "nom": "Total Total Discount",
+      "mesure_dax": "Total Total Discount",
+      "table": "Sales_metadata.json",
+      "format": "#,##0.00",
+      "objectif": null,
+      "sens": "plus est mieux",
+      "description": "Indicateur agrégé : Total Total Discount."
+    },
+    {
+      "nom": "Nb Lignes",
+      "mesure_dax": "Nb Lignes",
+      "table": "Sales_metadata.json",
+      "format": "#,##0",
+      "objectif": null,
+      "sens": "contexte",
+      "description": "Indicateur agrégé : Nb Lignes."
+    }
+  ]
+}

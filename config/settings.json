@@ -1,0 +1,38 @@
+{
+  "ai_providers": {
+    "tencent_hunyuan": {
+      "api_base": "https://api.hunyuan.cloud.tencent.com/v1",
+      "env_key": "TENCENT_API_KEY",
+      "models": {
+        "hy3": {
+          "model_id": "tencent/hy3",
+          "max_tokens": 4096,
+          "temperature": 0.7,
+          "tags": ["fast", "general"]
+        }
+      }
+    },
+    "agnes": {
+      "api_base": "https://apihub.agnes-ai.com/v1",
+      "env_key": "AGNES_API_KEY",
+      "timeout": 300,
+      "models": {
+        "agnes-2.0-flash": {
+          "model_id": "agnes-2.0-flash",
+          "max_tokens": 4096,
+          "temperature": 0.2,
+          "tags": ["powerbi", "expert"]
+        }
+      }
+    }
+  },
+  "routing_rules": {
+    "preprocessing": {"provider": "agnes", "model": "agnes-2.0-flash"},
+    "modeling": {"provider": "agnes", "model": "agnes-2.0-flash"},
+    "dax": {"provider": "agnes", "model": "agnes-2.0-flash"},
+    "design": {"provider": "agnes", "model": "agnes-2.0-flash"},
+    "storytelling": {"provider": "agnes", "model": "agnes-2.0-flash"},
+    "expert_powerbi": {"provider": "agnes", "model": "agnes-2.0-flash"},
+    "default": {"provider": "agnes", "model": "agnes-2.0-flash"}
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "nom_fichier": "Employees.csv",
+  "nombre_lignes": 10,
+  "nombre_colonnes": 7,
+  "colonnes": [
+    {
+      "nom": "id",
+      "type": "int64",
+      "valeurs_uniques": 10,
+      "taux_manquant": 0.0,
+      "exemple": "1"
+    },
+    {
+      "nom": "name",
+      "type": "str",
+      "valeurs_uniques": 10,
+      "taux_manquant": 0.0,
+      "exemple": "Esmée"
+    },
+    {
+      "nom": "last_name",
+      "type": "str",
+      "valeurs_uniques": 10,
+      "taux_manquant": 0.0,
+      "exemple": "Honing"
+    },
+    {
+      "nom": "contact_number",
+      "type": "str",
+      "valeurs_uniques": 10,
+      "taux_manquant": 0.0,
+      "exemple": "(091)-9764682"
+    },
+    {
+      "nom": "date_of_birth",
+      "type": "str",
+      "valeurs_uniques": 10,
+      "taux_manquant": 0.0,
+      "exemple": "1999-01-25"
+    },
+    {
+      "nom": "hire_date",
+      "type": "str",
+      "valeurs_uniques": 9,
+      "taux_manquant": 0.0,
+      "exemple": "2023-06-01"
+    },
+    {
+      "nom": "hourly_rate",
+      "type": "float64",
+      "valeurs_uniques": 4,
+      "taux_manquant": 0.0,
+      "exemple": "13.27"
+    }
+  ]
+}

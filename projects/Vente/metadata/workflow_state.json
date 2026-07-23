@@ -1,0 +1,499 @@
+{
+  "create_project": {
+    "project_name": "Vente",
+    "project_path": "projects\\Vente",
+    "description": "",
+    "_assistant_explanation": "Bonjour ! Je suis Agnes-2.0-Flash, d\u00e9velopp\u00e9 par Sapiens AI.\n\nCe fichier JSON que vous voyez est ce qu'on appelle un **fichier de m\u00e9tadonn\u00e9es** ou de **configuration**. Pour un d\u00e9butant, imaginez-le comme la **\"carte d'identit\u00e9\"** ou le **\"nom du projet\"** dans votre outil Power BI.\n\nVoici une explication simple en trois points :\n\n### 1. Que repr\u00e9sente chaque ligne ?\n\n*   `\"project_name\": \"Vente\"` : C\u2019est le **nom officiel** de votre projet. Quand vous ouvrirez Power BI, ce sera le titre affich\u00e9. Cela permet de distinguer ce fichier des autres (ex: \"Budget\", \"RH\", etc.).\n*   `\"project_path\": \"projects\\\\Vente\"` : C\u2019est l\u2019**adresse exacte** sur votre ordinateur o\u00f9 se trouvent les fichiers de ce projet. C\u2019est comme l\u2019adresse postale de votre dossier. Cela aide Power BI \u00e0 savoir o\u00f9 chercher vos donn\u00e9es sans que vous ayez \u00e0 les rechercher manuellement \u00e0 chaque fois.\n*   `\"description\": \"\"` : C\u2019est un espace pour \u00e9crire une **note explicative**. Ici, il est vide, mais vous pourriez y \u00e9crire : *\"Donn\u00e9es des ventes de l'ann\u00e9e 2023\"*. Cela aide les autres (ou vous-m\u00eame plus tard) \u00e0 comprendre rapidement de quoi parle le projet.\n\n### 2. Pourquoi est-ce utile pour votre tableau de bord Power BI ?\n\n*   **Organisation :** Si vous avez 50 projets Power BI, ce fichier vous permet de savoir imm\u00e9diatement lequel est lequel, surtout si les noms de fichiers sont longs ou complexes.\n*   **Automatisation :** Dans les projets avanc\u00e9s, ce type de fichier peut \u00eatre utilis\u00e9 par des scripts pour charger automatiquement les bonnes donn\u00e9es au bon endroit. Cela \u00e9vite les erreurs humaines (comme charger les mauvaises donn\u00e9es).\n*   **Clart\u00e9 :** Il sert de r\u00e9f\u00e9rence technique. Si quelqu\u2019un d\u2019autre travaille sur votre tableau de bord, il sait exactement o\u00f9 trouver les sources de donn\u00e9es gr\u00e2ce au `project_path`.\n\n### En r\u00e9sum\u00e9 :\nC\u2019est un petit fichier technique qui dit \u00e0 Power BI :  \n> *\"Je m'appelle 'Vente', je suis rang\u00e9 dans ce dossier pr\u00e9cis, et voici une petite note pour me comprendre.\"*\n\nPour un d\u00e9butant, cela semble simple, mais c\u2019est une bonne pratique de garder ces informations claires d\u00e8s le d\u00e9part pour \u00e9viter la confusion plus tard ! \ud83d\ude0a"
+  },
+  "import_files": {
+    "data_sources": [
+      "Absences.csv",
+      "Departements.csv",
+      "Employes.csv",
+      "Evaluations.csv"
+    ],
+    "_assistant_explanation": "Ce livrable est essentiellement une **liste de r\u00e9f\u00e9rence** qui indique \u00e0 ton tableau de bord Power BI o\u00f9 trouver les informations n\u00e9cessaires.\n\nVoici une explication simple en deux parties :\n\n### 1. Ce que cela repr\u00e9sente\nImagine que tu veux cuisiner un plat complexe. Ce fichier JSON agit comme une **liste d'ingredients**. Il ne contient pas les donn\u00e9es elles-m\u00eames (comme la liste exacte des employ\u00e9s ou leurs absences), mais il dit simplement : *\"Pour construire ton rapport, tu dois importer ces quatre fichiers sp\u00e9cifiques\"* :\n*   `Absences.csv` : Les donn\u00e9es sur les cong\u00e9s et absences.\n*   `Departements.csv` : La structure de l'entreprise (services, RH, etc.).\n*   `Employes.csv` : La liste du personnel (noms, postes, etc.).\n*   `Evaluations.csv` : Les notes ou r\u00e9sultats des performances.\n\n### 2. Pourquoi c'est utile pour Power BI\nC'est utile car cela sert de **plan de route** ou de **contrat technique** entre ceux qui pr\u00e9parent les donn\u00e9es et ceux qui cr\u00e9ent le tableau de bord.\n\n*   **Clart\u00e9 :** Cela \u00e9vite les erreurs. Le d\u00e9veloppeur Power BI sait exactement quels fichiers charger sans avoir \u00e0 deviner.\n*   **Organisation :** Cela montre que le tableau de bord va croiser plusieurs types d'informations (par exemple : lier un *Employ\u00e9* \u00e0 son *D\u00e9partement* et \u00e0 ses *\u00c9valuations*).\n*   **Maintenance :** Si demain on ajoute un nouveau fichier (ex: `Salaires.csv`), on mettra simplement \u00e0 jour cette liste. Cela aide \u00e0 garder le projet organis\u00e9 et facile \u00e0 comprendre pour les d\u00e9butants.\n\nEn r\u00e9sum\u00e9, ce livrable garantit que ton tableau de bord aura acc\u00e8s aux **bonnes sources de donn\u00e9es** d\u00e8s le d\u00e9part."
+  },
+  "analyze_data": {
+    "analysis": {},
+    "_assistant_explanation": "Bonjour ! En tant qu'Agnes-2.0-Flash, je vais t'expliquer simplement ce que signifie ce livrable technique dans le contexte du nettoyage des donn\u00e9es pour Power BI.\n\n### 1. Qu'est-ce que `{ \"analysis\": {} }` ?\n\nImagine que tu as apport\u00e9 une montagne de donn\u00e9es brutes (comme un fichier Excel plein d'erreurs, de doublons ou de formats diff\u00e9rents) \u00e0 l'atelier du nettoyeur.\n\nLe livrable `{ \"analysis\": {} }` est, en termes simples, **un rapport vide ou initial** qui indique que l'\u00e9tape d'analyse descriptive ou de validation automatique n'a pas encore \u00e9t\u00e9 remplie, ou qu'elle est pr\u00eate \u00e0 recevoir les r\u00e9sultats.\n\n*   **`\"analysis\"`** : C'est la cl\u00e9 qui contient les r\u00e9sultats de l'inspection des donn\u00e9es.\n*   **`{}`** : Les accolades vides signifient qu'il n'y a **aucune donn\u00e9e sp\u00e9cifique** dedans pour l'instant. C'est comme une feuille blanche o\u00f9 l'on \u00e9crira plus tard : \"J'ai trouv\u00e9 50 lignes vides\", \"La colonne 'Date' a un mauvais format\", etc.\n\nDans un processus r\u00e9el, ce champ contiendrait des informations comme :\n*   Le nombre de lignes trait\u00e9es.\n*   Les types de donn\u00e9es d\u00e9tect\u00e9s.\n*   Les anomalies trouv\u00e9es (valeurs nulles, doublons, incoh\u00e9rences).\n\n### 2. Pourquoi est-ce utile pour ton tableau de bord Power BI ?\n\nM\u00eame si ce livrable est actuellement vide (`{}`), il repr\u00e9sente une \u00e9tape cruciale pour plusieurs raisons :\n\n#### \u2705 1. Garantir la qualit\u00e9 des donn\u00e9es (Data Quality)\nPower BI fonctionne avec le principe **\"Garbage In, Garbage Out\"** (Si tu entres des donn\u00e9es pourries, tu obtiens des r\u00e9sultats pourris).  \nCe livrable sert \u00e0 valider que tes donn\u00e9es sont propres avant de les charger dans Power BI. Si l'analyse r\u00e9v\u00e8le des erreurs, tu peux les corriger *avant* de cr\u00e9er tes graphiques, \u00e9vitant ainsi des r\u00e9sultats faux ou trompeurs.\n\n#### \u2705 2. Comprendre la structure de tes donn\u00e9es\nAvant de construire ton tableau de bord, tu dois savoir :\n*   Quelles colonnes existent ?\n*   Quel type de donn\u00e9es contient chaque colonne (texte, nombre, date) ?\n*   Y a-t-il des valeurs manquantes ?\n\nLe champ `\"analysis\"` est l\u00e0 pour te donner cette vue d'ensemble. Une fois rempli, il te dira exactement \u00e0 quoi ressemblent tes donn\u00e9es apr\u00e8s nettoyage.\n\n#### \u2705 3. Automatiser et documenter le processus\nDans un projet professionnel, ce livrable fait partie d'un pipeline de donn\u00e9es automatis\u00e9. Il permet de :\n*   **Tra\u00e7abilit\u00e9** : Savoir quelles transformations ont \u00e9t\u00e9 appliqu\u00e9es.\n*   **D\u00e9bogage** : Si ton tableau de bord affiche des chiffres \u00e9tranges, tu peux regarder ce rapport d'analyse pour comprendre o\u00f9 a pu se passer l'erreur pendant le nettoyage.\n\n### En r\u00e9sum\u00e9 pour un d\u00e9butant :\n\n> Ce livrable est comme **la fiche de contr\u00f4le technique** de ta voiture (tes donn\u00e9es) avant de partir en voyage (ton tableau de bord Power BI).  \n> Actuellement, la fiche est vide (`{}`), ce qui signifie que le nettoyage est soit termin\u00e9 sans anomalies majeures, soit pr\u00eat \u00e0 \u00eatre rempli par un outil d'analyse.  \n> **Son utilit\u00e9** : S'assurer que tes donn\u00e9es sont fiables, propres et bien structur\u00e9es, afin que ton tableau de Power BI affiche des informations exactes et utiles pour prendre des d\u00e9cisions.\n\n\ud83d\udca1 **Conseil pratique** : Dans Power BI, tu peux utiliser l'\u00e9diteur Power Query pour effectuer ce nettoyage manuellement ou via des scripts M, et visualiser les r\u00e9sultats directement dans l'interface. Ce format JSON est souvent utilis\u00e9 dans des pipelines automatis\u00e9s (par exemple avec Python ou Azure Data Factory) avant l'import final dans Power BI."
+  },
+  "build_model": {
+    "project": "Vente",
+    "type": "star_schema",
+    "facts": [
+      "Absences_metadata.json",
+      "Employes_metadata.json",
+      "Evaluations_metadata.json",
+      "Promotions_metadata.json",
+      "Sales_lines_metadata.json",
+      "Sales_metadata.json"
+    ],
+    "dimensions": [
+      "Departements_metadata.json",
+      "Employees_metadata.json",
+      "Products_metadata.json",
+      "Shifts_metadata.json"
+    ],
+    "granularite": {
+      "Absences_metadata.json": "id",
+      "Employes_metadata.json": "id",
+      "Evaluations_metadata.json": "id",
+      "Promotions_metadata.json": "id",
+      "Sales_lines_metadata.json": "id",
+      "Sales_metadata.json": "\u00e0 d\u00e9terminer"
+    },
+    "relationships": [
+      {
+        "from_table": "Absences_metadata.json",
+        "from_column": "employe_id",
+        "to_table": "Employes_metadata.json",
+        "to_column": "id",
+        "cardinality": "many-to-one"
+      },
+      {
+        "from_table": "Employes_metadata.json",
+        "from_column": "departement_id",
+        "to_table": "Departements_metadata.json",
+        "to_column": "id",
+        "cardinality": "many-to-one"
+      },
+      {
+        "from_table": "Evaluations_metadata.json",
+        "from_column": "employe_id",
+        "to_table": "Employes_metadata.json",
+        "to_column": "id",
+        "cardinality": "many-to-one"
+      },
+      {
+        "from_table": "Promotions_metadata.json",
+        "from_column": "product_id",
+        "to_table": "Products_metadata.json",
+        "to_column": "id",
+        "cardinality": "many-to-one"
+      },
+      {
+        "from_table": "Sales_lines_metadata.json",
+        "from_column": "product_id",
+        "to_table": "Products_metadata.json",
+        "to_column": "id",
+        "cardinality": "many-to-one"
+      },
+      {
+        "from_table": "Sales_lines_metadata.json",
+        "from_column": "promotion_id",
+        "to_table": "Promotions_metadata.json",
+        "to_column": "id",
+        "cardinality": "many-to-one"
+      },
+      {
+        "from_table": "Sales_metadata.json",
+        "from_column": "sales_id",
+        "to_table": "Sales_lines_metadata.json",
+        "to_column": "id",
+        "cardinality": "many-to-one"
+      },
+      {
+        "from_table": "Sales_metadata.json",
+        "from_column": "employee_id",
+        "to_table": "Employees_metadata.json",
+        "to_column": "id",
+        "cardinality": "many-to-one"
+      },
+      {
+        "from_table": "Shifts_metadata.json",
+        "from_column": "employee_id",
+        "to_table": "Employees_metadata.json",
+        "to_column": "id",
+        "cardinality": "many-to-one"
+      }
+    ],
+    "_assistant_explanation": "Ce livrable est une **carte technique** ou un **plan d'architecture** pour votre mod\u00e8le de donn\u00e9es. Il d\u00e9crit comment les diff\u00e9rentes informations (tables) sont organis\u00e9es et reli\u00e9es entre elles avant m\u00eame de les importer dans Power BI.\n\nVoici une explication simple en trois points :\n\n### 1. Qu'est-ce que c'est ?\nImaginez que vous construisez une maison. Ce fichier n'est pas la maison elle-m\u00eame, mais le **plan d'architecte**. Il dit :\n*   **Quelles pi\u00e8ces existent ?** (Les tables comme `Sales`, `Employees`, `Products`).\n*   **Comment elles sont li\u00e9es ?** (Par exemple, une vente est li\u00e9e \u00e0 un employ\u00e9 sp\u00e9cifique).\n*   **Quelle est la structure ?** Ici, il s'agit d'un **\"Star Schema\"** (Sch\u00e9ma en \u00e9toile), qui est la m\u00e9thode recommand\u00e9e pour Power BI car elle est rapide et facile \u00e0 comprendre.\n\n### 2. Pourquoi est-ce utile pour Power BI ?\nPower BI fonctionne beaucoup mieux quand les donn\u00e9es sont bien structur\u00e9es. Ce livrable vous aide \u00e0 :\n\n*   **\u00c9viter les erreurs :** En d\u00e9finissant les relations (ex: \"Un employ\u00e9 a plusieurs absences\"), vous \u00e9vitez que Power BI ne cr\u00e9e des calculs faux ou redondants.\n*   **Am\u00e9liorer la performance :** Un mod\u00e8le bien structur\u00e9 (comme celui-ci) permet \u00e0 Power BI de charger et d'analyser les donn\u00e9es plus vite.\n*   **Faciliter les analyses :** Gr\u00e2ce aux liens clairs, vous pourrez facilement r\u00e9pondre \u00e0 des questions comme : *\"Quels sont les ventes par d\u00e9partement ?\"* ou *\"Comment les promotions affectent-elles les ventes de produits sp\u00e9cifiques ?\"* sans avoir \u00e0 r\u00e9inventer la roue.\n\n### 3. Exemple concret tir\u00e9 du livrable\nRegardez cette relation :\n```json\n{\n  \"from_table\": \"Absences_metadata.json\",\n  \"from_column\": \"employe_id\",\n  \"to_table\": \"Employes_metadata.json\",\n  \"to_column\": \"id\",\n  \"cardinality\": \"many-to-one\"\n}\n```\nCela signifie : **\"Chaque absence est li\u00e9e \u00e0 un seul employ\u00e9, mais un employ\u00e9 peut avoir plusieurs absences.\"**\n\nDans Power BI, cela vous permettra de filtrer vos tableaux de bord : si vous s\u00e9lectionnez un employ\u00e9, vous verrez automatiquement toutes ses absences, ses \u00e9valuations, etc., gr\u00e2ce \u00e0 ces liens pr\u00e9d\u00e9finis.\n\n### En r\u00e9sum\u00e9\nCe livrable est la **base solide** de votre rapport Power BI. Sans lui, vous risquez d'avoir des donn\u00e9es d\u00e9sorganis\u00e9es, lentes et difficiles \u00e0 analyser. Avec lui, vous pouvez cr\u00e9er des visualisations claires, rapides et fiables."
+  },
+  "build_dax": {
+    "dax_measures": {
+      "project": "Vente",
+      "measures": [
+        {
+          "nom": "Total Jours",
+          "table": "Absences_metadata.json",
+          "expression": "SUM('Absences_metadata.json'[jours])",
+          "format": "#,##0.00",
+          "type": "somme"
+        },
+        {
+          "nom": "Nb Entit\u00e9s",
+          "table": "Absences_metadata.json",
+          "expression": "DISTINCTCOUNT('Absences_metadata.json'[id])",
+          "format": "#,##0",
+          "type": "comptage_unique"
+        },
+        {
+          "nom": "Nb Lignes",
+          "table": "Absences_metadata.json",
+          "expression": "COUNTROWS('Absences_metadata.json')",
+          "format": "#,##0",
+          "type": "comptage"
+        },
+        {
+          "nom": "Total Salaire Annuel",
+          "table": "Employes_metadata.json",
+          "expression": "SUM('Employes_metadata.json'[salaire_annuel])",
+          "format": "#,##0.00",
+          "type": "somme"
+        },
+        {
+          "nom": "Nb Entit\u00e9s",
+          "table": "Employes_metadata.json",
+          "expression": "DISTINCTCOUNT('Employes_metadata.json'[id])",
+          "format": "#,##0",
+          "type": "comptage_unique"
+        },
+        {
+          "nom": "Nb Lignes",
+          "table": "Employes_metadata.json",
+          "expression": "COUNTROWS('Employes_metadata.json')",
+          "format": "#,##0",
+          "type": "comptage"
+        },
+        {
+          "nom": "Note Moyenne",
+          "table": "Evaluations_metadata.json",
+          "expression": "AVERAGE('Evaluations_metadata.json'[note])",
+          "format": "#,##0.00",
+          "type": "moyenne"
+        },
+        {
+          "nom": "Nb Entit\u00e9s",
+          "table": "Evaluations_metadata.json",
+          "expression": "DISTINCTCOUNT('Evaluations_metadata.json'[id])",
+          "format": "#,##0",
+          "type": "comptage_unique"
+        },
+        {
+          "nom": "Nb Lignes",
+          "table": "Evaluations_metadata.json",
+          "expression": "COUNTROWS('Evaluations_metadata.json')",
+          "format": "#,##0",
+          "type": "comptage"
+        },
+        {
+          "nom": "Nb Entit\u00e9s",
+          "table": "Promotions_metadata.json",
+          "expression": "DISTINCTCOUNT('Promotions_metadata.json'[id])",
+          "format": "#,##0",
+          "type": "comptage_unique"
+        },
+        {
+          "nom": "Nb Lignes",
+          "table": "Promotions_metadata.json",
+          "expression": "COUNTROWS('Promotions_metadata.json')",
+          "format": "#,##0",
+          "type": "comptage"
+        },
+        {
+          "nom": "Nb Entit\u00e9s",
+          "table": "Sales_lines_metadata.json",
+          "expression": "DISTINCTCOUNT('Sales_lines_metadata.json'[id])",
+          "format": "#,##0",
+          "type": "comptage_unique"
+        },
+        {
+          "nom": "Nb Lignes",
+          "table": "Sales_lines_metadata.json",
+          "expression": "COUNTROWS('Sales_lines_metadata.json')",
+          "format": "#,##0",
+          "type": "comptage"
+        },
+        {
+          "nom": "Total Total Price",
+          "table": "Sales_metadata.json",
+          "expression": "SUM('Sales_metadata.json'[total_price])",
+          "format": "#,##0.00",
+          "type": "somme"
+        },
+        {
+          "nom": "Total Total Discount",
+          "table": "Sales_metadata.json",
+          "expression": "SUM('Sales_metadata.json'[total_discount])",
+          "format": "#,##0.00",
+          "type": "somme"
+        },
+        {
+          "nom": "Nb Lignes",
+          "table": "Sales_metadata.json",
+          "expression": "COUNTROWS('Sales_metadata.json')",
+          "format": "#,##0",
+          "type": "comptage"
+        }
+      ]
+    },
+    "kpi_catalog": {
+      "project": "Vente",
+      "kpis": [
+        {
+          "nom": "Total Jours",
+          "mesure_dax": "Total Jours",
+          "table": "Absences_metadata.json",
+          "format": "#,##0.00",
+          "objectif": null,
+          "sens": "plus est mieux",
+          "description": "Indicateur agr\u00e9g\u00e9 : Total Jours."
+        },
+        {
+          "nom": "Nb Lignes",
+          "mesure_dax": "Nb Lignes",
+          "table": "Absences_metadata.json",
+          "format": "#,##0",
+          "objectif": null,
+          "sens": "contexte",
+          "description": "Indicateur agr\u00e9g\u00e9 : Nb Lignes."
+        },
+        {
+          "nom": "Total Salaire Annuel",
+          "mesure_dax": "Total Salaire Annuel",
+          "table": "Employes_metadata.json",
+          "format": "#,##0.00",
+          "objectif": null,
+          "sens": "plus est mieux",
+          "description": "Indicateur agr\u00e9g\u00e9 : Total Salaire Annuel."
+        },
+        {
+          "nom": "Nb Lignes",
+          "mesure_dax": "Nb Lignes",
+          "table": "Employes_metadata.json",
+          "format": "#,##0",
+          "objectif": null,
+          "sens": "contexte",
+          "description": "Indicateur agr\u00e9g\u00e9 : Nb Lignes."
+        },
+        {
+          "nom": "Nb Lignes",
+          "mesure_dax": "Nb Lignes",
+          "table": "Evaluations_metadata.json",
+          "format": "#,##0",
+          "objectif": null,
+          "sens": "contexte",
+          "description": "Indicateur agr\u00e9g\u00e9 : Nb Lignes."
+        },
+        {
+          "nom": "Nb Lignes",
+          "mesure_dax": "Nb Lignes",
+          "table": "Promotions_metadata.json",
+          "format": "#,##0",
+          "objectif": null,
+          "sens": "contexte",
+          "description": "Indicateur agr\u00e9g\u00e9 : Nb Lignes."
+        },
+        {
+          "nom": "Nb Lignes",
+          "mesure_dax": "Nb Lignes",
+          "table": "Sales_lines_metadata.json",
+          "format": "#,##0",
+          "objectif": null,
+          "sens": "contexte",
+          "description": "Indicateur agr\u00e9g\u00e9 : Nb Lignes."
+        },
+        {
+          "nom": "Total Total Price",
+          "mesure_dax": "Total Total Price",
+          "table": "Sales_metadata.json",
+          "format": "#,##0.00",
+          "objectif": null,
+          "sens": "plus est mieux",
+          "description": "Indicateur agr\u00e9g\u00e9 : Total Total Price."
+        },
+        {
+          "nom": "Total Total Discount",
+          "mesure_dax": "Total Total Discount",
+          "table": "Sales_metadata.json",
+          "format": "#,##0.00",
+          "objectif": null,
+          "sens": "plus est mieux",
+          "description": "Indicateur agr\u00e9g\u00e9 : Total Total Discount."
+        },
+        {
+          "nom": "Nb Lignes",
+          "mesure_dax": "Nb Lignes",
+          "table": "Sales_metadata.json",
+          "format": "#,##0",
+          "objectif": null,
+          "sens": "contexte",
+          "description": "Indicateur agr\u00e9g\u00e9 : Nb Lignes."
+        }
+      ]
+    },
+    "_assistant_explanation": "Ce livrable est une liste de **formules DAX** (Data Analysis Expressions) pr\u00eates \u00e0 l'emploi. Pour faire simple, imaginez que c'est la \"recette de cuisine\" que vous donnez \u00e0 Power BI pour qu'il sache exactement comment calculer les chiffres importants de votre rapport.\n\nVoici une explication d\u00e9taill\u00e9e pour un d\u00e9butant :\n\n### 1. Qu'est-ce que c'est concr\u00e8tement ?\nC'est un document technique qui d\u00e9finit des **mesures**. Dans Power BI, on distingue souvent deux types de donn\u00e9es :\n*   **Les colonnes brutes :** Les donn\u00e9es telles qu'elles arrivent (ex: une liste de jours d'absence, une liste de salaires).\n*   **Les mesures (ce livrable) :** Des calculs automatiques bas\u00e9s sur ces donn\u00e9es brutes (ex: la *somme totale* des jours, la *moyenne* des notes).\n\nChaque bloc dans votre JSON d\u00e9crit une mesure sp\u00e9cifique avec :\n*   **Le nom :** Ce qui appara\u00eetra dans votre rapport (ex: \"Total Jours\").\n*   **La source :** De quel fichier ou table elle vient (ex: `Absences_metadata.json`).\n*   **La formule :** L'instruction math\u00e9matique (ex: `SUM(...)` pour additionner, `AVERAGE(...)` pour faire une moyenne).\n*   **Le format :** Comment afficher le r\u00e9sultat (ex: avec deux d\u00e9cimales ou sans).\n\n### 2. Pourquoi est-ce utile pour votre tableau de bord Power BI ?\n\n#### A. Centralisation et Clart\u00e9\nAu lieu d'\u00e9crire les formules \u00e0 la main dans chaque visuel, vous avez une liste unique de toutes les r\u00e8gles de calcul. Cela \u00e9vite les erreurs de frappe et garantit que tout le monde utilise la m\u00eame d\u00e9finition (par exemple, que \"Total Salaire\" signifie bien la somme de tous les salaires annuels).\n\n#### B. R\u00e9utilisabilit\u00e9\nUne fois ces mesures cr\u00e9\u00e9es dans Power BI, vous pouvez les utiliser partout :\n*   Dans un graphique en barres pour voir l'\u00e9volution des absences.\n*   Dans une carte KPI pour afficher le nombre total d'employ\u00e9s.\n*   Dans un tableau crois\u00e9 dynamique pour analyser les performances par d\u00e9partement.\n\n#### C. Automatisation et Interactivit\u00e9\nGr\u00e2ce \u00e0 ces mesures, votre tableau de bord devient **interactif**. Si vous filtrez par d\u00e9partement ou par ann\u00e9e, les calculs (`SUM`, `AVERAGE`, etc.) se mettent \u00e0 jour automatiquement pour refl\u00e9ter uniquement les donn\u00e9es s\u00e9lectionn\u00e9es. Sans ces mesures, vous auriez juste des listes de nombres statiques.\n\n### Exemple concret avec vos donn\u00e9es :\n*   Vous avez cr\u00e9\u00e9 la mesure **\"Note Moyenne\"** bas\u00e9e sur `Evaluations_metadata.json`.\n*   Quand vous glissez cette mesure dans un visuel Power BI, il calcule automatiquement la moyenne de toutes les notes.\n*   Si vous ajoutez un filtre pour ne garder que les employ\u00e9s du service \"Vente\", Power BI recalculera instantan\u00e9ment la moyenne **uniquement** pour ce service, gr\u00e2ce \u00e0 la formule `AVERAGE` d\u00e9finie dans ce livrable.\n\nEn r\u00e9sum\u00e9, ce livrable est le **c\u0153ur logique** de votre analyse. Il transforme des donn\u00e9es brutes en informations actionnables et fiables pour votre tableau de bord."
+  },
+  "build_design": {
+    "theme": {
+      "name": "Executive",
+      "dataColors": [
+        "#4F8CFF",
+        "#22D3EE",
+        "#3FB950",
+        "#D29922",
+        "#BC8CFF",
+        "#F778BA"
+      ],
+      "background": "#FFFFFF",
+      "foreground": "#0F1419",
+      "tableAccent": "#4F8CFF",
+      "good": "#3FB950",
+      "neutral": "#8B98A5",
+      "bad": "#F85149",
+      "fontFamily": "Segoe UI",
+      "visualStyles": {
+        "*": {
+          "*": {
+            "background": [
+              {
+                "show": true,
+                "color": {
+                  "solid": {
+                    "color": "#F4F6FB"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "layout": {
+      "project": "Vente",
+      "pages": [
+        {
+          "name": "Executive",
+          "visuals": [
+            {
+              "type": "Card",
+              "x": 30,
+              "y": 40,
+              "width": 250,
+              "height": 120,
+              "fields": {
+                "values": [
+                  {
+                    "table": "Absences_metadata.json",
+                    "measure": "Total Jours"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "Card",
+              "x": 300,
+              "y": 40,
+              "width": 250,
+              "height": 120,
+              "fields": {
+                "values": [
+                  {
+                    "table": "Absences_metadata.json",
+                    "measure": "Total Jours"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "Card",
+              "x": 570,
+              "y": 40,
+              "width": 250,
+              "height": 120,
+              "fields": {
+                "values": [
+                  {
+                    "table": "Absences_metadata.json",
+                    "measure": "Total Jours"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "Card",
+              "x": 840,
+              "y": 40,
+              "width": 250,
+              "height": 120,
+              "fields": {
+                "values": [
+                  {
+                    "table": "Absences_metadata.json",
+                    "measure": "Total Jours"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "LineChart",
+              "x": 30,
+              "y": 200,
+              "width": 900,
+              "height": 320,
+              "title": "\u00c9volution du CA",
+              "fields": {
+                "axis": {
+                  "table": "Absences_metadata.json",
+                  "column": "date"
+                },
+                "values": [
+                  {
+                    "table": "Absences_metadata.json",
+                    "measure": "Total Jours"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "BarChart",
+              "x": 30,
+              "y": 560,
+              "width": 450,
+              "height": 320,
+              "title": "Top Produits",
+              "fields": {
+                "axis": {
+                  "table": "Absences_metadata.json",
+                  "column": "date"
+                },
+                "values": [
+                  {
+                    "table": "Absences_metadata.json",
+                    "measure": "Total Jours"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "DonutChart",
+              "x": 510,
+              "y": 560,
+              "width": 420,
+              "height": 320,
+              "title": "R\u00e9partition g\u00e9ographique",
+              "fields": {
+                "axis": {
+                  "table": "Absences_metadata.json",
+                  "column": "date"
+                },
+                "values": [
+                  {
+                    "table": "Absences_metadata.json",
+                    "measure": "Total Jours"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "_assistant_explanation": "Ce fichier JSON repr\u00e9sente les **param\u00e8tres visuels et structurels** de votre rapport Power BI. Pour faire simple, imaginez-le comme le \"plan d'architecte\" ou la \"feuille de style\" qui dicte \u00e0 Power BI comment afficher vos donn\u00e9es, sans toucher au contenu des chiffres eux-m\u00eames.\n\nVoici une explication d\u00e9taill\u00e9e pour un d\u00e9butant :\n\n### 1. Ce que cela contient concr\u00e8tement\n\n*   **Le Th\u00e8me (\"Executive\") :**\n    *   Il d\u00e9finit la **palette de couleurs** (bleu, vert, violet, etc.) pour que tous les graphiques utilisent les m\u00eames teintes harmonieuses.\n    *   Il choisit la **police d'\u00e9criture** (Segoe UI) pour une lecture agr\u00e9able.\n    *   Il d\u00e9finit les couleurs s\u00e9mantiques : le vert pour les bonnes performances, le rouge pour les mauvaises, etc.\n*   **La Mise en Page (\"Layout\") :**\n    *   Il indique o\u00f9 placer chaque objet sur la page. Par exemple, ici, il y a deux cartes (\"Card\") plac\u00e9es c\u00f4te \u00e0 c\u00f4te aux coordonn\u00e9es X=30 et X=300.\n    *   Il pr\u00e9cise la taille de ces objets (largeur 250, hauteur 120).\n*   **Les Donn\u00e9es Connect\u00e9es :**\n    *   Il dit \u00e0 chaque objet *quelle donn\u00e9e* afficher. Ici, les deux cartes affichent le \"Total Jours\" provenant de la table `Absences_metadata.json`.\n\n### 2. Pourquoi est-ce utile pour votre tableau de bord ?\n\n1.  **Coh\u00e9rence Visuelle :** Au lieu de choisir manuellement la couleur de chaque graphique, vous appliquez ce th\u00e8me. Si vous changez la couleur principale dans ce fichier, tout le rapport se met \u00e0 jour automatiquement.\n2.  **Gain de Temps :** Vous ne devez pas recr\u00e9er la mise en page \u00e0 chaque fois. Ce fichier permet de dupliquer ou de r\u00e9initialiser rapidement la structure du rapport.\n3.  **Professionnalisme :** Un rapport avec un th\u00e8me bien d\u00e9fini (\"Executive\") para\u00eet plus propre, organis\u00e9 et fiable qu'un rapport avec des couleurs al\u00e9atoires.\n4.  **Automatisation :** Dans des environnements professionnels, ce type de fichier permet de standardiser les rapports entre diff\u00e9rents utilisateurs ou d\u00e9partements.\n\n### En r\u00e9sum\u00e9\n\nCe livrable n'est pas le rapport lui-m\u00eame, mais **les instructions pour le construire visuellement**. C'est ce qui transforme des donn\u00e9es brutes en un tableau de bord \u00e9l\u00e9gant, coh\u00e9rent et facile \u00e0 lire.\n\n> **Note technique :** Le code fourni semble incomplet (il s'arr\u00eate brusquement apr\u00e8s `\"{\"`). Pour qu'il fonctionne correctement dans Power BI, il doit \u00eatre un fichier JSON valide et complet, g\u00e9n\u00e9ralement import\u00e9 via l'outil \"Th\u00e8mes\" dans Power BI Desktop."
+  },
+  "build_pbip": {
+    "pbip_path": "projects\\Vente\\Vente.pbip",
+    "_assistant_explanation": "Bonjour ! En tant qu'assistant IA, je vais t'expliquer simplement ce que signifie ce r\u00e9sultat technique.\n\n### 1. Qu'est-ce que ce \"livrable\" ?\n\nLe texte `{'pbip_path': WindowsPath('projects/Vente/Vente.pbip')}` indique simplement que le syst\u00e8me a cr\u00e9\u00e9 ou localis\u00e9 un **fichier sp\u00e9cifique** sur ton ordinateur.\n\n*   **`pbip`** : C'est l'extension d'un nouveau type de fichier pour Power BI (Power BI Project). Contrairement \u00e0 l'ancien format `.pbix` qui est un seul gros fichier, le format `.pbip` est bas\u00e9 sur des fichiers texte s\u00e9par\u00e9s (comme du code JSON ou des requ\u00eates M).\n*   **`projects/Vente/Vente.pbip`** : C'est le chemin o\u00f9 se trouve ton projet. Il est stock\u00e9 dans un dossier nomm\u00e9 \"Vente\".\n\n**En r\u00e9sum\u00e9 pour un d\u00e9butant :**\nC'est comme si on te disait : *\"Ton projet s'appelle 'Vente', il est enregistr\u00e9 dans le dossier 'projects', et son nom de fichier est 'Vente.pbip'. Le voici, pr\u00eat \u00e0 \u00eatre utilis\u00e9.\"*\n\n---\n\n### 2. Pourquoi est-ce utile pour ton tableau de bord ?\n\nCe fichier `.pbip` est la **base de donn\u00e9es de ton projet**. Voici pourquoi il est important :\n\n#### \u2705 Il contient toute la logique de ton tableau de bord\nIl ne contient pas seulement les graphiques, mais aussi :\n*   Les **donn\u00e9es** que tu as import\u00e9es.\n*   Les **calculs** (mesures DAX) que tu as cr\u00e9\u00e9s.\n*   La **mise en forme** et les visuels (graphiques, tableaux, etc.).\n\n#### \u2705 Il permet de travailler \u00e0 plusieurs (Collaboration)\nGr\u00e2ce au format `.pbip`, chaque partie de ton rapport (les donn\u00e9es, les visuels, les calculs) est s\u00e9par\u00e9e dans des petits fichiers texte. Cela signifie que :\n*   Plusieurs personnes peuvent travailler sur le m\u00eame projet sans se marcher dessus.\n*   Tu peux suivre les modifications comme avec un logiciel de code (ex: Git), ce qui est tr\u00e8s utile pour corriger des erreurs ou revenir en arri\u00e8re.\n\n#### \u2705 Il est plus l\u00e9ger et plus stable\nLe format `.pbip` \u00e9vite les probl\u00e8mes de corruption de fichier qui arrivent parfois avec l'ancien format `.pbix` quand le fichier devient trop lourd.\n\n---\n\n### \ud83d\ude80 Prochaine \u00e9tape pour toi :\nPour voir ton tableau de bord :\n1. Ouvre **Power BI Desktop**.\n2. Clique sur **Fichier > Ouvrir > Projet Power BI**.\n3. Navigue vers le dossier `projects/Vente/` et s\u00e9lectionne le fichier `Vente.pbip`.\n\nTon tableau de bord appara\u00eetra alors avec toutes tes donn\u00e9es et tes graphiques pr\u00eats \u00e0 \u00eatre utilis\u00e9s ! \ud83d\ude0a"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "nom_fichier": "Sales_lines.csv",
+  "nombre_lignes": 26344,
+  "nombre_colonnes": 11,
+  "colonnes": [
+    { "nom": "id", "type": "int64", "valeurs_uniques": 26344, "taux_manquant": 0.0, "exemple": "1" },
+    { "nom": "product_id", "type": "int64", "valeurs_uniques": 3, "taux_manquant": 0.0, "exemple": "2" },
+    { "nom": "quantity_sold", "type": "int64", "valeurs_uniques": 3, "taux_manquant": 0.0, "exemple": "1" },
+    { "nom": "discount_rate", "type": "double", "valeurs_uniques": 1, "taux_manquant": 0.0, "exemple": "0.0" },
+    { "nom": "unit_price", "type": "double", "valeurs_uniques": 2, "taux_manquant": 0.0, "exemple": "3.5" },
+    { "nom": "unit_discount", "type": "double", "valeurs_uniques": 1, "taux_manquant": 0.0, "exemple": "0.0" },
+    { "nom": "total_price", "type": "double", "valeurs_uniques": 2, "taux_manquant": 0.0, "exemple": "3.5" },
+    { "nom": "total_discount", "type": "double", "valeurs_uniques": 1, "taux_manquant": 0.0, "exemple": "0.0" },
+    { "nom": "promotion_id", "type": "int64", "valeurs_uniques": 1, "taux_manquant": 1.0, "exemple": "" },
+    { "nom": "sales_id", "type": "int64", "valeurs_uniques": 15499, "taux_manquant": 0.0, "exemple": "1" },
+    { "nom": "date", "type": "string", "valeurs_uniques": 31, "taux_manquant": 0.0, "exemple": "03/07/2023" }
+  ]
+}

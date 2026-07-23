@@ -1,0 +1,28 @@
+{
+  "nom_fichier": "Departements.csv",
+  "nombre_lignes": 6,
+  "nombre_colonnes": 3,
+  "colonnes": [
+    {
+      "nom": "id",
+      "type": "int64",
+      "valeurs_uniques": 6,
+      "taux_manquant": 0.0,
+      "exemple": "1"
+    },
+    {
+      "nom": "nom",
+      "type": "str",
+      "valeurs_uniques": 6,
+      "taux_manquant": 0.0,
+      "exemple": "Ventes"
+    },
+    {
+      "nom": "site",
+      "type": "str",
+      "valeurs_uniques": 3,
+      "taux_manquant": 0.0,
+      "exemple": "Lille"
+    }
+  ]
+}

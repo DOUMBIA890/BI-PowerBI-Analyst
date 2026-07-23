@@ -1,0 +1,6 @@
+id_client,nom_client,ville,segment,date_inscription
+C001,Marie Dubois,Paris,Gold,2025-03-12
+C002,Paul Martin,Lyon,Standard,2025-06-21
+C003,Sophie Bernard,Paris,Gold,2025-01-08
+C004,Luc Moreau,Marseille,Standard,2025-09-30
+C005,Emma Petit,Lyon,Bronze,2025-11-15

@@ -1,0 +1,63 @@
+{
+  "nom_fichier": "Promotions.csv",
+  "nombre_lignes": 3,
+  "nombre_colonnes": 8,
+  "colonnes": [
+    {
+      "nom": "id",
+      "type": "int64",
+      "valeurs_uniques": 3,
+      "taux_manquant": 0.0,
+      "exemple": "1"
+    },
+    {
+      "nom": "product_id",
+      "type": "int64",
+      "valeurs_uniques": 3,
+      "taux_manquant": 0.0,
+      "exemple": "1"
+    },
+    {
+      "nom": "name",
+      "type": "str",
+      "valeurs_uniques": 3,
+      "taux_manquant": 0.0,
+      "exemple": "Classic Stroopwafel Super Surprise"
+    },
+    {
+      "nom": "description",
+      "type": "str",
+      "valeurs_uniques": 2,
+      "taux_manquant": 0.0,
+      "exemple": "Third customer in line discount!"
+    },
+    {
+      "nom": "start_date",
+      "type": "str",
+      "valeurs_uniques": 3,
+      "taux_manquant": 0.0,
+      "exemple": "2023-08-17"
+    },
+    {
+      "nom": "end_date",
+      "type": "str",
+      "valeurs_uniques": 3,
+      "taux_manquant": 0.0,
+      "exemple": "2023-08-23"
+    },
+    {
+      "nom": "discount_rate",
+      "type": "float64",
+      "valeurs_uniques": 3,
+      "taux_manquant": 0.0,
+      "exemple": "0.16"
+    },
+    {
+      "nom": "is_holiday",
+      "type": "bool",
+      "valeurs_uniques": 2,
+      "taux_manquant": 0.0,
+      "exemple": "False"
+    }
+  ]
+}

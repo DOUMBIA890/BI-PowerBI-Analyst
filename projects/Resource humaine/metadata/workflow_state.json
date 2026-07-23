@@ -1,0 +1,17 @@
+{
+  "create_project": {
+    "project_name": "Resource humaine",
+    "project_path": "projects\\Resource humaine",
+    "description": "",
+    "_assistant_explanation": "Ce livrable est un **fichier de configuration** (souvent au format JSON) qui sert de \"carte d'identit\u00e9\" ou de \"notice d'installation\" pour votre projet Power BI.\n\nVoici une explication simple, point par point :\n\n### 1. Que contient ce fichier ?\nIl d\u00e9finit trois informations cl\u00e9s sur votre projet :\n*   **`project_name` (\"Resource humaine\")** : C'est le nom officiel de votre projet. Cela permet \u00e0 Power BI de savoir que vous travaillez sur la gestion des employ\u00e9s, pas sur les ventes ou la logistique.\n*   **`project_path` (\"projects\\\\Resource humaine\")** : C'est l'adresse exacte o\u00f9 les fichiers de votre projet sont stock\u00e9s sur votre ordinateur. C'est comme l'adresse de votre maison : sans elle, Power BI ne sait pas o\u00f9 chercher vos donn\u00e9es.\n*   **`description` (\"\")** : C'est un espace vide pour ajouter plus de d\u00e9tails si n\u00e9cessaire (par exemple : \"Tableau de bord pour le d\u00e9partement RH\"). Ici, il est vide, mais il peut \u00eatre rempli plus tard.\n\n### 2. Pourquoi est-ce utile pour votre tableau de bord Power BI ?\nImaginez que vous construisez une maison. Ce fichier est comme le **plan d'architecte** qui dit :\n*   Comment s'appelle cette maison ? (Nom du projet)\n*   O\u00f9 est-elle situ\u00e9e ? (Chemin du dossier)\n*   \u00c0 quoi sert-elle ? (Description)\n\nPour Power BI, ce fichier est utile car :\n*   **Il organise vos fichiers** : Si vous avez plusieurs projets (ex: \"Ventes\", \"RH\", \"Finance\"), ce fichier aide \u00e0 ne pas tout m\u00e9langer.\n*   **Il facilite l'importation des donn\u00e9es** : Quand vous commencez \u00e0 importer vos donn\u00e9es Excel ou CSV, Power BI utilise ce chemin (`project_path`) pour savoir o\u00f9 ranger les fichiers et comment les lier entre eux.\n*   **Il rend le projet professionnel** : Avoir un nom clair et un chemin d\u00e9fini aide les autres coll\u00e8gues \u00e0 comprendre rapidement de quoi traite votre tableau de bord.\n\n### En r\u00e9sum\u00e9 pour un d\u00e9butant :\nCe livrable n'est pas un graphique ni un tableau de donn\u00e9es. C'est un **petit fichier technique** qui dit \u00e0 Power BI : *\"Je travaille sur le projet 'Resource humaine', et tous mes fichiers se trouvent dans le dossier 'projects\\\\Resource humaine'.\"*\n\nC'est la premi\u00e8re \u00e9tape pour bien structurer votre travail avant de commencer \u00e0 cr\u00e9er vos graphiques."
+  },
+  "import_files": {
+    "data_sources": [
+      "Absences.csv",
+      "Departements.csv",
+      "Employes.csv",
+      "Evaluations.csv"
+    ],
+    "_assistant_explanation": "[Import des donn\u00e9es] (explication indisponible : Request timed out.)"
+  }
+}

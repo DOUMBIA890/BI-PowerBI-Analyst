@@ -1,0 +1,42 @@
+{
+  "nom_fichier": "Absences.csv",
+  "nombre_lignes": 482,
+  "nombre_colonnes": 5,
+  "colonnes": [
+    {
+      "nom": "id",
+      "type": "int64",
+      "valeurs_uniques": 482,
+      "taux_manquant": 0.0,
+      "exemple": "1"
+    },
+    {
+      "nom": "employe_id",
+      "type": "int64",
+      "valeurs_uniques": 140,
+      "taux_manquant": 0.0,
+      "exemple": "1"
+    },
+    {
+      "nom": "date",
+      "type": "str",
+      "valeurs_uniques": 265,
+      "taux_manquant": 0.0,
+      "exemple": "2024-06-07"
+    },
+    {
+      "nom": "motif",
+      "type": "str",
+      "valeurs_uniques": 5,
+      "taux_manquant": 0.0,
+      "exemple": "RTT"
+    },
+    {
+      "nom": "jours",
+      "type": "int64",
+      "valeurs_uniques": 10,
+      "taux_manquant": 0.0,
+      "exemple": "4"
+    }
+  ]
+}

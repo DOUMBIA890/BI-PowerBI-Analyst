@@ -1,0 +1,42 @@
+{
+  "nom_fichier": "Evaluations.csv",
+  "nombre_lignes": 124,
+  "nombre_colonnes": 5,
+  "colonnes": [
+    {
+      "nom": "id",
+      "type": "int64",
+      "valeurs_uniques": 124,
+      "taux_manquant": 0.0,
+      "exemple": "4"
+    },
+    {
+      "nom": "employe_id",
+      "type": "int64",
+      "valeurs_uniques": 124,
+      "taux_manquant": 0.0,
+      "exemple": "4"
+    },
+    {
+      "nom": "annee",
+      "type": "int64",
+      "valeurs_uniques": 1,
+      "taux_manquant": 0.0,
+      "exemple": "2024"
+    },
+    {
+      "nom": "note",
+      "type": "float64",
+      "valeurs_uniques": 40,
+      "taux_manquant": 0.0,
+      "exemple": "4.2"
+    },
+    {
+      "nom": "objectif_atteint",
+      "type": "int64",
+      "valeurs_uniques": 2,
+      "taux_manquant": 0.0,
+      "exemple": "0"
+    }
+  ]
+}

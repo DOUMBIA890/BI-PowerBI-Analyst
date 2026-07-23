@@ -1,0 +1,54 @@
+{
+  "project": "Vente",
+  "measures": [
+    {
+      "nom": "Nb Entités",
+      "table": "Promotions_metadata.json",
+      "expression": "DISTINCTCOUNT('Promotions_metadata.json'[id])",
+      "format": "#,##0",
+      "type": "comptage_unique"
+    },
+    {
+      "nom": "Nb Lignes",
+      "table": "Promotions_metadata.json",
+      "expression": "COUNTROWS('Promotions_metadata.json')",
+      "format": "#,##0",
+      "type": "comptage"
+    },
+    {
+      "nom": "Nb Entités",
+      "table": "Sales_lines_metadata.json",
+      "expression": "DISTINCTCOUNT('Sales_lines_metadata.json'[id])",
+      "format": "#,##0",
+      "type": "comptage_unique"
+    },
+    {
+      "nom": "Nb Lignes",
+      "table": "Sales_lines_metadata.json",
+      "expression": "COUNTROWS('Sales_lines_metadata.json')",
+      "format": "#,##0",
+      "type": "comptage"
+    },
+    {
+      "nom": "Total Total Price",
+      "table": "Sales_metadata.json",
+      "expression": "SUM('Sales_metadata.json'[total_price])",
+      "format": "#,##0.00",
+      "type": "somme"
+    },
+    {
+      "nom": "Total Total Discount",
+      "table": "Sales_metadata.json",
+      "expression": "SUM('Sales_metadata.json'[total_discount])",
+      "format": "#,##0.00",
+      "type": "somme"
+    },
+    {
+      "nom": "Nb Lignes",
+      "table": "Sales_metadata.json",
+      "expression": "COUNTROWS('Sales_metadata.json')",
+      "format": "#,##0",
+      "type": "comptage"
+    }
+  ]
+}

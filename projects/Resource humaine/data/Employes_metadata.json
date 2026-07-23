@@ -1,0 +1,70 @@
+{
+  "nom_fichier": "Employes.csv",
+  "nombre_lignes": 200,
+  "nombre_colonnes": 9,
+  "colonnes": [
+    {
+      "nom": "id",
+      "type": "int64",
+      "valeurs_uniques": 200,
+      "taux_manquant": 0.0,
+      "exemple": "1"
+    },
+    {
+      "nom": "nom",
+      "type": "str",
+      "valeurs_uniques": 200,
+      "taux_manquant": 0.0,
+      "exemple": "Employe_1"
+    },
+    {
+      "nom": "departement_id",
+      "type": "int64",
+      "valeurs_uniques": 6,
+      "taux_manquant": 0.0,
+      "exemple": "2"
+    },
+    {
+      "nom": "poste",
+      "type": "str",
+      "valeurs_uniques": 6,
+      "taux_manquant": 0.0,
+      "exemple": "Analyste"
+    },
+    {
+      "nom": "contrat",
+      "type": "str",
+      "valeurs_uniques": 4,
+      "taux_manquant": 0.0,
+      "exemple": "CDI"
+    },
+    {
+      "nom": "date_embauche",
+      "type": "str",
+      "valeurs_uniques": 192,
+      "taux_manquant": 0.0,
+      "exemple": "2019-07-26"
+    },
+    {
+      "nom": "salaire_annuel",
+      "type": "float64",
+      "valeurs_uniques": 172,
+      "taux_manquant": 0.0,
+      "exemple": "34717.0"
+    },
+    {
+      "nom": "genre",
+      "type": "str",
+      "valeurs_uniques": 2,
+      "taux_manquant": 0.0,
+      "exemple": "H"
+    },
+    {
+      "nom": "actif",
+      "type": "int64",
+      "valeurs_uniques": 2,
+      "taux_manquant": 0.0,
+      "exemple": "1"
+    }
+  ]
+}

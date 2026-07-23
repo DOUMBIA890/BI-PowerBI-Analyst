@@ -1,0 +1,20 @@
+# Secrets & environment
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Streamlit / logs
+logs/
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project outputs (generated PBIP, exports)
+projects/**/output/
+*.pbip/

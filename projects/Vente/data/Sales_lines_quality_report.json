@@ -1,0 +1,10 @@
+{
+  "nom_fichier": "Sales_lines.csv",
+  "score_qualite": 100.0,
+  "lignes_dupliquees": 0,
+  "cellules_manquantes": 0,
+  "problemes": [],
+  "candidats_cles": [
+    "id;product_id;quantity_sold;discount_rate;unit_price;unit_discount;total_price;total_discount;promotion_id;sales_id;date"
+  ]
+}

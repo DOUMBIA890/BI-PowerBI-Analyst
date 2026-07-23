@@ -1,0 +1,47 @@
+{
+  "project": "Resource humaine",
+  "measures": [
+    {
+      "nom": "Total Jours",
+      "table": "Absences.csv",
+      "expression": "SUM('Absences.csv'[jours])",
+      "format": "#,##0.00",
+      "type": "somme"
+    },
+    {
+      "nom": "Nb Entités",
+      "table": "Absences.csv",
+      "expression": "DISTINCTCOUNT('Absences.csv'[id])",
+      "format": "#,##0",
+      "type": "comptage_unique"
+    },
+    {
+      "nom": "Nb Lignes",
+      "table": "Absences.csv",
+      "expression": "COUNTROWS('Absences.csv')",
+      "format": "#,##0",
+      "type": "comptage"
+    },
+    {
+      "nom": "Note Moyenne",
+      "table": "Evaluations.csv",
+      "expression": "AVERAGE('Evaluations.csv'[note])",
+      "format": "#,##0.00",
+      "type": "moyenne"
+    },
+    {
+      "nom": "Nb Entités",
+      "table": "Evaluations.csv",
+      "expression": "DISTINCTCOUNT('Evaluations.csv'[id])",
+      "format": "#,##0",
+      "type": "comptage_unique"
+    },
+    {
+      "nom": "Nb Lignes",
+      "table": "Evaluations.csv",
+      "expression": "COUNTROWS('Evaluations.csv')",
+      "format": "#,##0",
+      "type": "comptage"
+    }
+  ]
+}

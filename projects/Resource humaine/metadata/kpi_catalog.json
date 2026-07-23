@@ -1,0 +1,32 @@
+{
+  "project": "Resource humaine",
+  "kpis": [
+    {
+      "nom": "Total Jours",
+      "mesure_dax": "Total Jours",
+      "table": "Absences.csv",
+      "format": "#,##0.00",
+      "objectif": null,
+      "sens": "plus est mieux",
+      "description": "Indicateur agrégé : Total Jours."
+    },
+    {
+      "nom": "Nb Lignes",
+      "mesure_dax": "Nb Lignes",
+      "table": "Absences.csv",
+      "format": "#,##0",
+      "objectif": null,
+      "sens": "contexte",
+      "description": "Indicateur agrégé : Nb Lignes."
+    },
+    {
+      "nom": "Nb Lignes",
+      "mesure_dax": "Nb Lignes",
+      "table": "Evaluations.csv",
+      "format": "#,##0",
+      "objectif": null,
+      "sens": "contexte",
+      "description": "Indicateur agrégé : Nb Lignes."
+    }
+  ]
+}

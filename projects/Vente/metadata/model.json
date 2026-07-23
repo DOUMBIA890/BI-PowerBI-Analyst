@@ -1,0 +1,68 @@
+{
+  "project": "Vente",
+  "type": "star_schema",
+  "facts": [
+    "Promotions_metadata.json",
+    "Sales_lines_metadata.json",
+    "Sales_metadata.json"
+  ],
+  "dimensions": [
+    "Employees_metadata.json",
+    "Products_metadata.json",
+    "Shifts_metadata.json",
+    "Dates.csv"
+  ],
+  "granularite": {
+    "Promotions_metadata.json": "id",
+    "Sales_lines_metadata.json": "id",
+    "Sales_metadata.json": "à déterminer"
+  },
+  "relationships": [
+    {
+      "from_table": "Promotions_metadata.json",
+      "from_column": "product_id",
+      "to_table": "Products_metadata.json",
+      "to_column": "id",
+      "cardinality": "many-to-one"
+    },
+    {
+      "from_table": "Sales_lines_metadata.json",
+      "from_column": "product_id",
+      "to_table": "Products_metadata.json",
+      "to_column": "id",
+      "cardinality": "many-to-one"
+    },
+    {
+      "from_table": "Sales_lines_metadata.json",
+      "from_column": "promotion_id",
+      "to_table": "Promotions_metadata.json",
+      "to_column": "id",
+      "cardinality": "many-to-one"
+    },
+    {
+      "from_table": "Sales_metadata.json",
+      "from_column": "sales_id",
+      "to_table": "Sales_lines_metadata.json",
+      "to_column": "id",
+      "cardinality": "many-to-one"
+    },
+    {
+      "from_table": "Sales_metadata.json",
+      "from_column": "employee_id",
+      "to_table": "Employees_metadata.json",
+      "to_column": "id",
+      "cardinality": "many-to-one"
+    },
+    {
+      "from_table": "Shifts_metadata.json",
+      "from_column": "employee_id",
+      "to_table": "Employees_metadata.json",
+      "to_column": "id",
+      "cardinality": "many-to-one"
+    }
+  ],
+  "date_table": "Dates.csv",
+  "date_columns": [
+    "start_date"
+  ]
+}

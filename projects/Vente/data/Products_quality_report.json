@@ -1,0 +1,13 @@
+{
+  "nom_fichier": "Products.csv",
+  "score_qualite": 100.0,
+  "lignes_dupliquees": 0,
+  "cellules_manquantes": 0,
+  "problemes": [],
+  "candidats_cles": [
+    "id",
+    "product_name",
+    "unit_cost",
+    "unit_price"
+  ]
+}

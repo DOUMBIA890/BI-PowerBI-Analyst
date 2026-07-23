@@ -1,0 +1,31 @@
+# BI Architect AI - Dependencies
+# Generated from .venv
+
+streamlit==1.59.2
+pandas==3.0.3
+openpyxl==3.1.5
+python-dotenv==1.2.2
+httpx==0.28.1
+requests==2.34.2
+
+# Data processing
+numpy==2.4.6
+pyarrow==24.0.0
+
+# Database
+psycopg2-binary==2.9.12
+SQLAlchemy==2.0.51
+
+# AI/Orchestration
+openai==2.45.0
+pydantic==2.13.4
+
+# Visualization (optional, used by some components)
+plotly==6.9.0
+altair==6.2.2
+pydeck==0.9.3
+pillow==12.3.0
+
+# Utils
+python-dateutil==2.9.0.post0
+tqdm==4.68.4

@@ -1,0 +1,130 @@
+{
+  "project": "Vente",
+  "pages": [
+    {
+      "name": "Executive",
+      "visuals": [
+        {
+          "type": "Card",
+          "x": 30,
+          "y": 40,
+          "width": 250,
+          "height": 120,
+          "fields": {
+            "values": [
+              {
+                "table": "Promotions_metadata.json",
+                "measure": "Nb Entités"
+              }
+            ]
+          }
+        },
+        {
+          "type": "Card",
+          "x": 300,
+          "y": 40,
+          "width": 250,
+          "height": 120,
+          "fields": {
+            "values": [
+              {
+                "table": "Promotions_metadata.json",
+                "measure": "Nb Entités"
+              }
+            ]
+          }
+        },
+        {
+          "type": "Card",
+          "x": 570,
+          "y": 40,
+          "width": 250,
+          "height": 120,
+          "fields": {
+            "values": [
+              {
+                "table": "Promotions_metadata.json",
+                "measure": "Nb Entités"
+              }
+            ]
+          }
+        },
+        {
+          "type": "Card",
+          "x": 840,
+          "y": 40,
+          "width": 250,
+          "height": 120,
+          "fields": {
+            "values": [
+              {
+                "table": "Promotions_metadata.json",
+                "measure": "Nb Entités"
+              }
+            ]
+          }
+        },
+        {
+          "type": "LineChart",
+          "x": 30,
+          "y": 200,
+          "width": 900,
+          "height": 320,
+          "title": "Évolution du CA",
+          "fields": {
+            "axis": {
+              "table": "Sales_lines_metadata.json",
+              "column": "date"
+            },
+            "values": [
+              {
+                "table": "Promotions_metadata.json",
+                "measure": "Nb Entités"
+              }
+            ]
+          }
+        },
+        {
+          "type": "BarChart",
+          "x": 30,
+          "y": 560,
+          "width": 450,
+          "height": 320,
+          "title": "Top Produits",
+          "fields": {
+            "axis": {
+              "table": "Sales_lines_metadata.json",
+              "column": "date"
+            },
+            "values": [
+              {
+                "table": "Promotions_metadata.json",
+                "measure": "Nb Entités"
+              }
+            ]
+          }
+        },
+        {
+          "type": "DonutChart",
+          "x": 510,
+          "y": 560,
+          "width": 420,
+          "height": 320,
+          "title": "Répartition géographique",
+          "fields": {
+            "axis": {
+              "table": "Sales_lines_metadata.json",
+              "column": "date"
+            },
+            "values": [
+              {
+                "table": "Promotions_metadata.json",
+                "measure": "Nb Entités"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

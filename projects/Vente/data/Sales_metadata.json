@@ -1,0 +1,63 @@
+{
+  "nom_fichier": "Sales.csv",
+  "nombre_lignes": 15499,
+  "nombre_colonnes": 8,
+  "colonnes": [
+    {
+      "nom": "sales_id",
+      "type": "int64",
+      "valeurs_uniques": 15499,
+      "taux_manquant": 0.0,
+      "exemple": "1"
+    },
+    {
+      "nom": "date",
+      "type": "str",
+      "valeurs_uniques": 83,
+      "taux_manquant": 0.0,
+      "exemple": "2023-07-03"
+    },
+    {
+      "nom": "time",
+      "type": "str",
+      "valeurs_uniques": 11946,
+      "taux_manquant": 0.0,
+      "exemple": "13:01:47"
+    },
+    {
+      "nom": "employee_id",
+      "type": "int64",
+      "valeurs_uniques": 10,
+      "taux_manquant": 0.0,
+      "exemple": "2"
+    },
+    {
+      "nom": "total_price",
+      "type": "float64",
+      "valeurs_uniques": 168,
+      "taux_manquant": 0.0,
+      "exemple": "6.0"
+    },
+    {
+      "nom": "total_discount",
+      "type": "float64",
+      "valeurs_uniques": 13,
+      "taux_manquant": 0.0,
+      "exemple": "0.0"
+    },
+    {
+      "nom": "weekday",
+      "type": "str",
+      "valeurs_uniques": 7,
+      "taux_manquant": 0.0,
+      "exemple": "Monday"
+    },
+    {
+      "nom": "payment_type",
+      "type": "str",
+      "valeurs_uniques": 3,
+      "taux_manquant": 0.0,
+      "exemple": "debit_card"
+    }
+  ]
+}

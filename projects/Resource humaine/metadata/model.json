@@ -1,0 +1,44 @@
+{
+  "project": "Resource humaine",
+  "type": "star_schema",
+  "facts": [
+    "Absences.csv",
+    "Evaluations.csv"
+  ],
+  "dimensions": [
+    "Departements.csv",
+    "Employes.csv",
+    "Dates.csv"
+  ],
+  "granularite": {
+    "Absences.csv": "id",
+    "Evaluations.csv": "id"
+  },
+  "relationships": [
+    {
+      "from_table": "Absences.csv",
+      "from_column": "employe_id",
+      "to_table": "Employes.csv",
+      "to_column": "id",
+      "cardinality": "many-to-one"
+    },
+    {
+      "from_table": "Evaluations.csv",
+      "from_column": "employe_id",
+      "to_table": "Employes.csv",
+      "to_column": "id",
+      "cardinality": "many-to-one"
+    },
+    {
+      "from_table": "Employes.csv",
+      "from_column": "departement_id",
+      "to_table": "Departements.csv",
+      "to_column": "id",
+      "cardinality": "many-to-one"
+    }
+  ],
+  "date_table": "Dates.csv",
+  "date_columns": [
+    "date"
+  ]
+}
