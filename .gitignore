@@ -16,5 +16,16 @@ logs/
 Thumbs.db
 
 # Project outputs (generated PBIP, exports)
-projects/**/output/
+projects/
 *.pbip/
+
+# IDE
+.idea/
+.vscode/
+
+# Test and coverage
+.coverage
+htmlcov/
+
+# Local overrides
+!.streamlit/config.toml
